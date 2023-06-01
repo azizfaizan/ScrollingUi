@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher" />
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/name_field"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/card"
+        app:layout_constraintStart_toEndOf="@id/card"
+        app:layout_constraintTop_toTopOf="@id/card" />
+
+
+    <ImageView
+        android:id="@+id/verified_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/verified"
+        app:layout_constraintStart_toEndOf="@id/text_name"
+        app:layout_constraintTop_toTopOf="@id/text_name" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/time"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@id/verified_icon"
+        app:layout_constraintStart_toEndOf="@id/verified_icon"
+        app:layout_constraintTop_toTopOf="@id/verified_icon" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/outline_more_horiz_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/comment_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/first_comment"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/text_name"
+        app:layout_constraintTop_toBottomOf="@id/card" />
+
+    <ImageView
+        android:id="@+id/like_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6sp"
+        android:src="@drawable/outline_heart_broken_24"
+        app:layout_constraintStart_toStartOf="@id/comment_desc"
+        app:layout_constraintTop_toBottomOf="@id/comment_desc" />
+
+    <TextView
+        android:id="@+id/no_of_likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        app:layout_constraintStart_toEndOf="@id/like_button"
+        app:layout_constraintTop_toTopOf="@id/like_button" />
+
+    <ImageView
+        android:id="@+id/commit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6sp"
+        android:src="@drawable/outline_add_comment_24"
+        app:layout_constraintStart_toEndOf="@id/no_of_likes"
+        app:layout_constraintTop_toBottomOf="@id/comment_desc" />
+
+    <TextView
+        android:id="@+id/no_of_comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        app:layout_constraintStart_toEndOf="@id/commit_button"
+        app:layout_constraintTop_toTopOf="@id/commit_button" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintStart_toStartOf="@id/like_button"
+        app:layout_constraintTop_toBottomOf="@id/like_button">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher" />
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/name_field"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/card2"
+        app:layout_constraintStart_toEndOf="@id/card2"
+        app:layout_constraintTop_toTopOf="@id/card2" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/time"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@id/text_name2"
+        app:layout_constraintStart_toEndOf="@id/text_name2"
+        app:layout_constraintTop_toTopOf="@id/text_name2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/outline_more_horiz_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/card2" />
+
+    <TextView
+        android:id="@+id/comment_desc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/second_comment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/text_name2"
+        app:layout_constraintTop_toBottomOf="@id/card2" />
+
+    <ImageView
+        android:id="@+id/like_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6sp"
+        android:src="@drawable/outline_heart_broken_24"
+        app:layout_constraintStart_toStartOf="@id/text_name2"
+        app:layout_constraintTop_toBottomOf="@id/comment_desc2" />
+
+    <TextView
+        android:id="@+id/no_of_likes2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        app:layout_constraintStart_toEndOf="@id/like_button2"
+        app:layout_constraintTop_toTopOf="@id/like_button2" />
+
+    <ImageView
+        android:id="@+id/galler_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/outline_image_24"
+        app:layout_constraintStart_toStartOf="@id/card"
+        app:layout_constraintTop_toBottomOf="@id/like_button2" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_write_comment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/write_your_coment"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/galler_button"
+        app:layout_constraintStart_toEndOf="@id/galler_button"
+        app:layout_constraintTop_toTopOf="@id/galler_button" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/send"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@id/galler_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/galler_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
